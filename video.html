@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/page.css">
+</head>
+<body>
+    <!-- ->->->->->->->->->-> WRAPPING AREA START ->->->->->->->->->-> -->
+    <div class="wrapping">
+        <!-- ->->->->->->->->->-> OVERLAY AREA START ->->->->->->->->->-> -->
+        <div class="overlay"></div>
+        <!-- <-<-<-<-<-<-<-<-<-<- overlay area end <-<-<-<-<-<-<-<-<-<- -->
+        <!-- ->->->->->->->->->-> HEADER AREA START ->->->->->->->->->-> -->
+        <header>
+            <div class="container">
+            <div class="search_header">
+                <div class="search_nav">
+                    <a href="index.html" class="nav_logo" target="_blank"><img src="assets/img/brave.svg" alt="Logo"></a>
+                    <a href="index.html" class="nav_logo2" target="_blank"><img src="assets/img/brave-logo-small.svg" alt="Logo"></a>
+                    <div class="search_form">
+                        <form action="#">
+                            <img src="assets/img/home_search.svg" alt="search icon">
+                            <!-- search wrapper -->
+                            <div class="search_wrapper">
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <img class="search_close" src="assets/img/close.svg" alt="">
+                            <!-- search mic -->
+                            <hr>
+                            <div class="search_mic">
+                                <img src="assets/img/home_mic.svg" alt="">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- setting icon -->
+                <ul class="settings_icon">
+                    <li><a href="#"><img src="assets/img/circled-menu.png" alt=""></a></li>
+                    <li onclick="menuSettings()"><a href="#"><img src="assets/img/settings.svg" alt=""></a></li>
+                    <li class="user_data">
+                        <div class="user" onclick="user()">MD</div>
+                        <!-- user id -->
+                        <div class="userId">
+                            <!-- user id -->
+                            <div class="userId_box">
+                                <div class="userId_header">
+                                    <div class="user"><img src="assets/img/book_2.jpg" alt=""></div>
+                                    <div class="userId_text">
+                                        <h4>Md Rahman</h4>
+                                        <p>rahmanbrandmail@gmail.com</p>
+                                        <h4 class="manage_mail">Manage Your Account</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- user mail -->
+                            <div class="userId_box">
+                                <div class="user_mail">
+                                    <div class="user"><img src="assets/img/book_2.jpg" alt=""></div>
+                                    <div class="userId_text">
+                                        <h4>Md Rahman</h4>
+                                        <p>rahmanbrandmail@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="user_mail add_mail">
+                                    <div class="user">MD</div>
+                                    <h4>Add another account</h4>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- user sing out -->
+                            <div class="singOut_box">
+                                <div class="user_singOut">
+                                    <h4>Sign out of all accounts</h4>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- user footer -->
+                            <div class="userId_box">
+                                <div class="user_footer">
+                                    <p>Privacy Policy</p>
+                                    <span>*</span>
+                                    <p>Terms of Service</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- ->->->->->->->->->-> NAV TABS AREA START ->->->->->->->->->-> -->
+            <nav class="nav_tabs">
+                <ul class="tab_list">
+                    <li>
+                        <a href="header.html">
+                            <span><img src="assets/img/home_search.svg" alt="search icon"></span>
+                            All
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">
+                            <span><img src="assets/img/photo.svg" alt="search icon"></span>
+                            Images
+                        </a>
+                    </li>
+                    <li>
+                        <a href="job.html">
+                            <span><img src="assets/img/newspaper.svg" alt="search icon"></span>
+                            News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html">
+                            <span><img src="assets/img/video.svg" alt="search icon"></span>
+                            Shop
+                        </a>
+                    </li>
+                    <li>
+                        <a href="book.html">
+                            <span><img src="assets/img/search-clinic.svg" alt="search icon"></span>
+                            Books
+                        </a>
+                    </li>
+                </ul>
+                <!-- tabs icon -->
+                <ul class="tabs_icon">
+                    <div class="info">
+                        <div class="tab_img" onclick="infoActive()">
+                            <img src="assets/img/info.svg" class="section_icon" alt="">
+                        </div>
+                        <div class="info_box">
+                            <div class="info_img">
+                                <img src="assets/img/book1.jpg" alt="">
+                            </div>
+                            <div class="info_text">
+                                <p class="card_title">Lorem ipsum dolor sit amet.</p>
+                                <p class="card_dtl">
+                                    dolor sit amet consectetur adipisicing elit. 
+                                    Veritatis soluta id architecto labore ipsa nesciunt, dolores vitae. 
+                                    Inventore natus cum ea commodi, at nulla 
+                                    praesentium totam doloribus, soluta, neque pariatur?
+                                </p>
+                                <div class="user_footer">
+                                    <p>Privacy Policy</p>
+                                    <span>*</span>
+                                    <p>Terms of Service</p>
+                                </div>
+                            </div>
+                            <div class="join_info">
+                                Join and claim
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="helpUs">
+                        <div class="tab_img" onclick="helpUsActive()">
+                            <img src="assets/img/help.svg" class="section_icon" alt="">
+                        </div>
+                        <div class="helpUs_box">
+                            <!-- close icon -->
+                            <div class="close_icon" onclick="closHelpUs()">
+                                <img src="assets/img/close.svg" alt="">
+                            </div>
+                            <p class="menu_title">Help us improve Brave Search</p>
+                            <div class="helpUs_text">
+                                <p class="menu_subtitle">
+                                    What do you think of the information shown?
+                                </p>
+                                <form action="#" method="post">
+                                    <ul class="helpUs_list">
+                                        <li>
+                                            <input type="radio" id="helpful" name="onlyHelp">
+                                            <label class="card_dtl" for="helpful">This is helpful</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="relevant" name="onlyHelp">
+                                            <label class="card_dtl" for="relevant">This isn't relevant</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="wrong" name="onlyHelp">
+                                            <label class="card_dtl" for="wrong">Something is wrong</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="useful" name="onlyHelp">
+                                            <label class="card_dtl" for="useful">This isn't useful</label>
+                                        </li>
+                                    </ul>
+                                    <p class="menu_subtitle">
+                                        Comments or suggestions?
+                                    </p>
+                                    <textarea rows="7" placeholder="Message"></textarea>
+                                    <div class="helpForm_sent">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <!-- <-<-<-<-<-<-<-<-<-<- nav tabs area end <-<-<-<-<-<-<-<-<-<-  -->
+            </div>
+        </header>
+        <!-- <-<-<-<-<-<-<-<-<-<- header area end <-<-<-<-<-<-<-<-<-<-  -->
+        <!-- ->->->->->->->->->-> FILTER AREA START ->->->->->->->->->-> -->
+        <div class="container">
+            <section class="filter">
+                <div class="filter_data">
+                    <ul class="filter_menu">
+                        <li>
+                            <span>All regions</span>
+                            <div class="filter_icon">
+                                <img src="assets/img/down.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <span>Safe search: Moderate</span>
+                            <div class="filter_icon">
+                                <img src="assets/img/down.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <span>any time</span>
+                            <div class="filter_icon">
+                                <img src="assets/img/down.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="location">
+                            <div class="tab_img" onclick="locationActive()">
+                                <img src="assets/img/location-pin.svg" alt="">
+                            </div>
+                            <div class="menuBox_data">
+                                    <div class="search_form">
+                                        <form action="#">
+                                            <img src="assets/img/home_search.svg" alt="">
+                                            <!-- search wrapper -->
+                                            <div class="search_wrapper">
+                                                <input type="text" placeholder="Search">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <h4 class="menu_title">Social</h4>
+                                    <div class="menu_item">
+                                        <div class="menuItem_img">
+                                            <img src="assets/img/location-pin.svg" alt="">
+                                        </div>
+                                        <div class="menuItem_text">
+                                            <h4 class="menu_subtitle">Events</h4>
+                                        </div>
+                                    </div>
+                                    <div class="menu_item">
+                                        <div class="menuItem_img">
+                                            <img src="assets/img/location-pin.svg" alt="">
+                                        </div>
+                                        <div class="menuItem_text">
+                                            <h4 class="menu_subtitle">Events</h4>
+                                        </div>
+                                    </div>
+                                    <div class="menu_item">
+                                        <div class="menuItem_img">
+                                            <img src="assets/img/location-pin.svg" alt="">
+                                        </div>
+                                        <div class="menuItem_text">
+                                            <h4 class="menu_subtitle">Events</h4>
+                                        </div>
+                                    </div>
+                                    <div class="menu_item">
+                                        <div class="menuItem_img">
+                                            <img src="assets/img/location-pin.svg" alt="">
+                                        </div>
+                                        <div class="menuItem_text">
+                                            <h4 class="menu_subtitle">Events</h4>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- <-<-<-<-<-<-<-<-<-<- filter area end <-<-<-<-<-<-<-<-<-<-  -->
+        <main>
+            <div class="container wrapper">
+        <!-- ->->->->->->->->->-> VIDEO AREA START ->->->->->->->->->-> -->
+        <section class="video">
+            <!-- video header -->
+            <div class="video_header">
+                <div class="slider_icon left" id="videoLeft"><img src="assets/img/left_slider.svg" alt=""></div>
+                <div class="slider_icon right" id="videoRight"><img src="assets/img/right_slider.svg" alt=""></div>
+
+                <div class="items_gallery">
+
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img1.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img2.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img3.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img4.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img1.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img2.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img3.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img4.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img1.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img2.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img3.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+                    <div class="item_gallery">
+                        <div class="item_img_gallery">
+                            <img src="assets/img/gallery_img4.jpg" alt="">
+                        </div>
+                        <p>doodle</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="video_items">
+
+                <div class="video_item">
+                    <!-- video -->
+                    <video muted src="assets/img/video_1.mp4" class="videoPlay"></video>
+                    <div class="video_text">
+                        <div class="card_header">
+                            <div class="oneCard_img">
+                                <img src="assets/img/youtube.svg" alt="">
+                            </div>
+                            <a href="#" class="card_link">youtube.com</a>
+                        </div>
+                        <p class="card_title">
+                            Gasoline (Official Video)- Youtube Music
+                        </p>
+                        <p class="card_link">3 years ago</p>
+                    </div>
+                </div>
+                <div class="video_item">
+                    <!-- video -->
+                    <video muted src="assets/img/video_2.mp4" class="videoPlay"></video>
+                    <div class="video_text">
+                        <div class="card_header">
+                            <div class="oneCard_img">
+                                <img src="assets/img/youtube.svg" alt="">
+                            </div>
+                            <a href="#" class="card_link">youtube.com</a>
+                        </div>
+                        <p class="card_title">
+                            Gasoline (Official Video)- Youtube Music
+                        </p>
+                        <p class="card_link">3 years ago</p>
+                    </div>
+                </div>
+                <div class="video_item">
+                    <!-- video -->
+                    <video muted src="assets/img/video_3.mp4" class="videoPlay"></video>
+                    <div class="video_text">
+                        <div class="card_header">
+                            <div class="oneCard_img">
+                                <img src="assets/img/youtube.svg" alt="">
+                            </div>
+                            <a href="#" class="card_link">youtube.com</a>
+                        </div>
+                        <p class="card_title">
+                            Gasoline (Official Video)- Youtube Music
+                        </p>
+                        <p class="card_link">3 years ago</p>
+                    </div>
+                </div>
+                <div class="video_item">
+                    <!-- video -->
+                    <video muted src="assets/img/video_2.mp4" class="videoPlay"></video>
+                    <div class="video_text">
+                        <div class="card_header">
+                            <div class="oneCard_img">
+                                <img src="assets/img/youtube.svg" alt="">
+                            </div>
+                            <a href="#" class="card_link">youtube.com</a>
+                        </div>
+                        <p class="card_title">
+                            Gasoline (Official Video)- Youtube Music
+                        </p>
+                        <p class="card_link">3 years ago</p>
+                    </div>
+                </div>
+                <div class="video_item">
+                    <!-- video -->
+                    <video muted src="assets/img/video_3.mp4" class="videoPlay"></video>
+                    <div class="video_text">
+                        <div class="card_header">
+                            <div class="oneCard_img">
+                                <img src="assets/img/youtube.svg" alt="">
+                            </div>
+                            <a href="#" class="card_link">youtube.com</a>
+                        </div>
+                        <p class="card_title">
+                            Gasoline (Official Video)- Youtube Music
+                        </p>
+                        <p class="card_link">3 years ago</p>
+                    </div>
+                </div>
+                <div class="video_item">
+                    <!-- video -->
+                    <video muted src="assets/img/video_4.mp4" class="videoPlay"></video>
+                    <div class="video_text">
+                        <div class="card_header">
+                            <div class="oneCard_img">
+                                <img src="assets/img/youtube.svg" alt="">
+                            </div>
+                            <a href="#" class="card_link">youtube.com</a>
+                        </div>
+                        <p class="card_title">
+                            Gasoline (Official Video)- Youtube Music
+                        </p>
+                        <p class="card_link">3 years ago</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- <-<-<-<-<-<-<-<-<-<- video area end <-<-<-<-<-<-<-<-<-<-  -->
+        </div>
+        </main>
+    </div>
+    <!-- <-<-<-<-<-<-<-<-<-<- wrapping area end <-<-<-<-<-<-<-<-<-<- -->
+    <!-- ->->->->->->->->->-> MENU AREA START ->->->->->->->->->-> -->
+    <section class="menu">
+        <!-- close icon -->
+        <div class="close_icon" onclick="closeMenu()">
+            <img src="assets/img/close.svg" alt="">
+        </div>
+        <h3>Menu</h3>
+        <!-- menu data -->
+        <div class="menu_data">
+            <div class="menu_box">
+                <!-- menuBox data -->
+                <div class="menuBox_data">
+                    <div class="search_form">
+                        <form action="#">
+                            <img src="assets/img/home_search.svg" alt="search icon">
+                            <!-- search wrapper -->
+                            <div class="search_wrapper">
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+
+                    <h4 class="menu_title">Social</h4>
+                    <div class="menu_item">
+                        <div class="menuItem_img">
+                            <img src="assets/img/job.svg" alt="">
+                        </div>
+                        <div class="menuItem_text">
+                            <h4 class="menu_subtitle">Events</h4>
+                            <p class="menu_dtl">Organize or find events and other things to do online and nearby.</p>
+                        </div>
+                    </div>
+                    <div class="menu_item">
+                        <div class="menuItem_img">
+                            <img src="assets/img/job.svg" alt="">
+                        </div>
+                        <div class="menuItem_text">
+                            <h4 class="menu_subtitle">Events</h4>
+                            <p class="menu_dtl">Organize or find events and other things to do online and nearby.</p>
+                        </div>
+                    </div>
+                    <div class="menu_item">
+                        <div class="menuItem_img">
+                            <img src="assets/img/job.svg" alt="">
+                        </div>
+                        <div class="menuItem_text">
+                            <h4 class="menu_subtitle">Events</h4>
+                            <p class="menu_dtl">Organize or find events and other things to do online and nearby.</p>
+                        </div>
+                    </div>
+                    <div class="menu_item">
+                        <div class="menuItem_img">
+                            <img src="assets/img/job.svg" alt="">
+                        </div>
+                        <div class="menuItem_text">
+                            <h4 class="menu_subtitle">Events</h4>
+                            <p class="menu_dtl">Organize or find events and other things to do online and nearby.</p>
+                        </div>
+                    </div>
+                    <div class="menu_item">
+                        <div class="menuItem_img">
+                            <img src="assets/img/job.svg" alt="">
+                        </div>
+                        <div class="menuItem_text">
+                            <h4 class="menu_subtitle">Events</h4>
+                            <p class="menu_dtl">Organize or find events and other things to do online and nearby.</p>
+                        </div>
+                    </div>
+                    <div class="menu_item">
+                        <div class="menuItem_img">
+                            <img src="assets/img/job.svg" alt="">
+                        </div>
+                        <div class="menuItem_text">
+                            <h4 class="menu_subtitle">Events</h4>
+                            <p class="menu_dtl">Organize or find events and other things to do online and nearby.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu_box">
+                <!-- menuBox create -->
+                <div class="menuBox_create">
+                    <h4 class="menu_title">Create</h4>
+                    <div class="menu_item">
+                        <div class="menuItem_img">
+                            <img src="assets/img/job.svg" alt="">
+                        </div>
+                        <div class="menuItem_text">
+                            <h4 class="menu_subtitle">Events</h4>
+                        </div>
+                    </div>
+                    <div class="menu_item">
+                        <div class="menuItem_img">
+                            <img src="assets/img/find.svg" alt="">
+                        </div>
+                        <div class="menuItem_text">
+                            <h4 class="menu_subtitle">Events</h4>
+                        </div>
+                    </div>
+                    <div class="menu_item">
+                        <div class="menuItem_img">
+                            <img src="assets/img/info.svg" alt="">
+                        </div>
+                        <div class="menuItem_text">
+                            <h4 class="menu_subtitle">Events</h4>
+                        </div>
+                    </div>
+                    <div class="menu_item">
+                        <div class="menuItem_img">
+                            <img src="assets/img/plus.svg" alt="">
+                        </div>
+                        <div class="menuItem_text">
+                            <h4 class="menu_subtitle">Events</h4>
+                        </div>
+                    </div>
+                    <div class="menu_item">
+                        <div class="menuItem_img">
+                            <img src="assets/img/lock.svg" alt="">
+                        </div>
+                        <div class="menuItem_text">
+                            <h4 class="menu_subtitle">Events</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- <-<-<-<-<-<-<-<-<-<- menu area end <-<-<-<-<-<-<-<-<-<- -->
+
+
+    <!-- js -->
+    <script>
+        // video slider ------------
+        const videoHeader  = document.querySelector('.video_header');
+        const videoItems = videoHeader.querySelector('.items_gallery');
+        const videoSliderIcon = videoHeader.querySelectorAll('.slider_icon');
+        
+        firstCard = 150;
+        videoSliderIcon.forEach(icon => {
+            icon.addEventListener('click', () => {
+                videoItems.scrollLeft += icon.id == 'videoLeft' ? -firstCard : firstCard;
+            });
+        });
+
+
+
+        // video mouse hover, autoplay -----
+        const videoPlay = document.querySelectorAll('.videoPlay')
+        for (let i = 0; i < videoPlay.length; i++) {
+            videoPlay[i].addEventListener('mouseenter', (e) => {
+                videoPlay[i].play();
+            })
+            videoPlay[i].addEventListener('mouseout', (e) => {
+                videoPlay[i].pause();
+            })
+        }
+    </script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
